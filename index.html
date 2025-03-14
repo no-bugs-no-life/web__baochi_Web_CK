@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+</head>
+
+<body class="bg-gray-900 text-white">
+    <script src="mau.js"></script>
+    <!-- Header -->
+    <header class="p-6 flex justify-between items-center border-b border-gray-700">
+        <h1 class="text-xl font-bold"> THE WORLD</h1>
+        <nav class="space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+            <a href="#" class="text-gray-400 hover:text-white">Projects</a>
+            <a href="#" class="text-gray-400 hover:text-white">About</a>
+            <a href="#" class="text-gray-400 hover:text-white">Newsletter</a>
+            <button id="dark-mode-toggle" class="text-gray-400 hover:text-white">
+                <span id="toggle-icon">🌙</span>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <div class="w-full border-b-[1px] border-gray-400/50 pb-1 flex justify-center">
+        <h1 class="text-5xl font-bold text-white text-center">THE BLOG</h1>
+    </div>
+
+
+
+    <!-- Recent Blog Posts -->
+    <section class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-semibold mb-6">Trang Chính</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+            <!-- Bài viết lớn -->
+            <div class="md:col-span-2 bg-gray-900 p-4 rounded-lg">
+                <img src="img3.jpg" class="w-full h-60 object-cover rounded-lg" />
+                <p class="text-purple-400 text-sm mt-2">Dec 1, 2024</p>
+                <h2 class="text-white text-xl font-bold mt-2">
+                    Thế giới tin tức hiện nay là một bức tranh phức tạp và đa dạng, phản ánh những biến động
+                    không ngừng của thời đại. Dưới đây là một số khía cạnh bao quát</h2>
+                <p class="text-gray-400 mt-2">
+                    Dưới đây là một số tin tức hot trong những tuần qua
+                </p>
+                <div class="mt-2 space-x-2">
+                    <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs">Kinh tế / Chính Trị</span>
+                    <span class="bg-purple-500 text-white px-2 py-1 rounded-full text-xs">Du Lịch</span>
+                    <span class="bg-pink-500 text-white px-2 py-1 rounded-full text-xs">Đời Sống</span>
+                </div>
+            </div>
+
+            <!-- Các bài viết nhỏ bên phải -->
+            <div class="space-y-6">
+                <div class="bg-gray-900 p-4 rounded-lg flex items-start">
+                    <img src="img4.jpg" class="w-20 h-20 object-cover rounded-lg" />
+                    <div class="ml-4">
+                        <p class="text-purple-400 text-sm"> Tuesday,21 Jan , 2025</p>
+                        <h3 class="text-white font-bold">Tổng Thống Donal Trump</h3>
+                        <p class="text-gray-400 text-sm">
+                            Ông Donald Trump chính thức
+                            trở thành Tổng thống thứ 47 của
+                            nước Mỹ
+                        </p>
+                        <div class="mt-1 space-x-2">
+                            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs">Chính Trị</span>
+                            <span class="bg-pink-500 text-white px-2 py-1 rounded-full text-xs">Kinh Tế</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 p-4 rounded-lg flex items-start">
+                    <img src="img5.jpg" class="w-20 h-20 object-cover rounded-lg" />
+                    <div class="ml-4">
+                        <p class="text-purple-400 text-sm">Sunday, 1 Jan 2025</p>
+                        <h3 class="text-white font-bold">Chiến sự Nga - Ukraine</h3>
+                        <p class="text-gray-400 text-sm">
+                            Ông Putin: Lính Ukraine không còn đường thoát khỏi Kursk
+                        </p>
+                        <div class="mt-1 space-x-2">
+                            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs">Chính Trị</span>
+                            <span class="bg-green-500 text-white px-2 py-1 rounded-full text-xs">Kinh Tế</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <!-- Phần giữa -->
+        <div class="bg-gray-800 p-6 rounded-lg flex flex-row-reverse items-center">
+            <div class="ml-4">
+                <p class="text-purple-400 text-sm"> February 3, 2025</p>
+                <h3 class="text-xl font-semibold mb-4">Bốn mô hình AI đang gây sốt của Trung Quốc</h3>
+                <h4>Một số mô hình AI Trung Quốc đang thu hút sự chú ý khi có thể cạnh tranh mạnh mẽ với các gã khổng lồ
+                    của Mỹ.
+
+                    Ngành công nghệ AI tại Trung Quốc đang nóng lên với sự xuất hiện của các mô hình sánh ngang với đối
+                    thủ từ Mỹ. Trong đó, bốn cái tên nổi bật là DeepSeek, Alibaba, Tencent và Manus.
+
+                </h4>
+                <div class="flex items-center space-x-2">
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Công Nghệ</span>
+                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Kinh tế</span>
+                    <span class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Khoa Học</span>
+                </div>
+            </div>
+            <div>
+                <img src="img9.jpg" alt="News Image" class="w-full h-full object-cover rounded-lg">
+            </div>
+
+        </div>
+
+        <!-- All Blog Posts -->
+        <section class="max-w-6xl mx-auto px-6 mt-12">
+            <h2 class="text-2xl font-semibold mb-6">BREAKINH NEWS</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <img src="img1.jpg" class="rounded-md mb-4" />
+                    <h3 class="text-xl font-semibold">Cảnh Đẹp</h3>
+                    <h4>
+                        <p class="text-purple-400 text-sm"> Friday,14 March , 2025</p>
+                        Tháp Eiffel là một tháp lưới bằng sắt rèn trên Champ de Mars ở Paris, Pháp.
+                        Nó được đặt theo tên của kỹ sư Gustave Eiffel, người có công ty
+                        thiết kế và xây dựng tòa tháp từ năm
+                        1887 đến năm 1889.
+                    </h4>
+                    <p></p>
+                    <div class="flex space-x-2 mt-4">
+                        <span class="px-3 py-1 text-sm font-medium bg-purple-700 text-white rounded-full">Du Lịch</span>
+                        <span class="px-3 py-1 text-sm font-medium bg-gray-700 text-white rounded-full">Thiên
+                            Nhiên</span>
+                        <span class="px-3 py-1 text-sm font-medium bg-pink-600 text-white rounded-full">Cảnh Đẹp</span>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <img src="img2.jpg" class="rounded-md mb-4" />
+                    <h2>Giải Trí</h2>
+                    <p class="text-purple-400 text-sm"> Tuesday,21 Jan , 2025</p>
+                    <h3 class="text-xl font-semibold">Yoo Ah In bị tuyên 1 năm tù, 2 năm án treo vì sử dụng chất cấm
+                    </h3>
+                    <h4>Tòa án đã tuyên án nam diễn viên Yoo Ah In 1 năm tù, 2 năm án treo, kèm theo mức phạt
+                        2 triệu won, 80 giờ lao động công ích, 40 giờ tham gia chương trình phục hồi chức năng ma túy và
+                        phải nộp 1,54 triệu won tiền phạt bổ sung.</h4>
+                    <div class="flex space-x-2 mt-4">
+                        <span class="px-3 py-1 text-sm font-medium bg-purple-700 text-white rounded-full">Đời
+                            Sống</span>
+                        <span class="px-3 py-1 text-sm font-medium bg-gray-700 text-white rounded-full">Xã Hội</span>
+                        <span class="px-3 py-1 text-sm font-medium bg-pink-600 text-white rounded-full">Nổi Tiếng</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <img src="img6.jpg" class="rounded-md mb-4" />
+                    <h2>Đời Sống</h2>
+                    <p class="text-purple-400 text-sm"> Feb 03, 2025</p>
+                    <h3 class="text-xl font-semibold">Bắt tay 3 'ông lớn' Singapore, Vietnam Airlines cùng sân bay Long
+                        Thành vươn tầm thế giới</h3>
+                    <h4>Ngày 13.3 đánh dấu một bước ngoặt quan trọng
+                        trong chiến lược phát triển của Vietnam Airlines, khi hãng hàng không quốc gia
+                        ký kết loạt biên bản ghi nhớ hợp tác chiến lược với ba 'ông lớn' của Singapore, ngay trong khuôn
+                        khổ
+                        chuyến thăm cấp Nhà nước của Tổng Bí thư Tô Lâm với mục tiêu đưa Cảng hàng không quốc tế (CHKQT)
+                        Long Thành
+                        trở thành trung tâm hàng không hiện đại, vươn tầm quốc tế và cạnh tranh toàn cầu.
+                    </h4>
+                    <div class="flex space-x-2 mt-4">
+                        <span class="px-3 py-1 text-sm font-medium bg-purple-700 text-white rounded-full">Đời
+                            Sống</span>
+                        <span class="px-3 py-1 text-sm font-medium bg-gray-700 text-white rounded-full">Xã Hội</span>
+                        <span class="px-3 py-1 text-sm font-medium bg-pink-600 text-white rounded-full">Nổi Tiếng</span>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <img src="img7.jpg" class="rounded-md mb-4" />
+                    <h2>Giáo Dục</h2>
+                    <p class="text-purple-400 text-sm"> Feb 26, 2025</p>
+
+                    <h3 class="text-xl font-semibold">Để học sinh có 'tuổi thơ không áp lực'</h3>
+                    <h4>Ngày 13.3, Viện Khoa học giáo dục VN tổ chức tọa đàm 'Để trẻ em Việt
+                        lớn lên với tuổi thơ không áp lực' nhằm chia sẻ thực trạng những
+                        yếu tố gây áp lực cho trẻ em lứa tuổi tiểu...
+                    </h4>
+                    <div class="flex space-x-2 mt-4">
+                        <span class="px-3 py-1 text-sm font-medium bg-purple-700 text-white rounded-full">Đời
+                            Sống</span>
+                        <span class="px-3 py-1 text-sm font-medium bg-gray-700 text-white rounded-full">Giáo Dục</span>
+                        <span class="px-3 py-1 text-sm font-medium bg-pink-600 text-white rounded-full">Pháp Luật</span>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <img src="img8.jpg" class="rounded-md mb-4" />
+                    <h2>Kinh tế</h2>
+
+                    <p class="text-purple-400 text-sm"> March 14, 2025</p>
+                    <h3 class="text-xl font-semibold">
+                        Thành viên sáng lập hưởng lợi từ ông Trump,
+                        đi ngược "cải cách khẩn
+                        cấp" của Trung Quốc: BRICS chia rẽ?
+                        </h4>
+
+                        <div class="flex space-x-2 mt-4">
+                            <span class="px-3 py-1 text-sm font-medium bg-purple-700 text-white rounded-full">Đời
+                                Sống</span>
+                            <span class="px-3 py-1 text-sm font-medium bg-gray-700 text-white rounded-full">Giáo
+                                Dục</span>
+                            <span class="px-3 py-1 text-sm font-medium bg-pink-600 text-white rounded-full">Pháp
+                                Luật</span>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="pagination">
+            <a href="#" class="previous">← Previous</a>
+            <a href="#" class="page active">1</a>
+            <a href="#" class="page">2</a>
+            <a href="#" class="page">3</a>
+            <span class="ellipsis">...</span>
+            <a href="#" class="page">8</a>
+            <a href="#" class="page">9</a>
+            <a href="#" class="page">10</a>
+            <a href="#" class="next">Next →</a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center p-6 mt-12 border-t border-gray-700">
+            <p>&copy; 2025 The World | LinkedIn | Email | TailWind css</p>
+        </footer>
+</body>
+
+</html>

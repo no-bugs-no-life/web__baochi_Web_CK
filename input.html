@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen flex items-center justify-center bg-gray-100">
+
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <div class="text-center">
+            <img class="mx-auto h-10 w-auto"
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5YzaCnhTWtOEuv0B7UMyKrLwUtEfGDsfDRZR7BgO2dPSEYqqYAEjLpsPh2RDFT7sS-K3QXv_M6yAX3ieEAd6WHTFu3wZoXSTQyYSzFw"
+                alt="Your Company">
+            <h2 class="mt-5 text-2xl font-bold text-gray-900">Đăng Nhập hoặc muốn làm một cục</h2>
+        </div>
+
+        <form class="mt-6 space-y-4">
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Mức chu cấp của bạn (email)</label>
+                <input type="email" id="email" required
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Số Phòng (Password)</label>
+                <input type="password" id="password" required
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+            </div>
+
+            <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-500">Sign
+                in</button>
+        </form>
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("form").addEventListener("submit", function (event) {
+                event.preventDefault();
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

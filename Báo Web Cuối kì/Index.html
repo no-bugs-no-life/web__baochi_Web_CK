@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .pagination-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .pagination a,
+        .pagination span {
+            padding: 8px 12px;
+            margin: 0 4px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 4px;
+        }
+
+        .pagination a.active {
+            background-color: #f0f0f0;
+        }
+
+        .pagination a:hover {
+            background-color: #f9f9f9;
+        }
+
+        .pagination-arrow {
+            font-weight: bold;
+        }
+
+        .pagination-dots {
+            pointer-events: none;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .pagination-arrow:first-child {
+            margin-right: auto;
+        }
+
+        .pagination-arrow:last-child {
+            margin-left: auto;
+        }
+
+        .pagination-number,
+        .pagination-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black dark:bg-while dark:text-black">
+    <div class="container mx-auto px-6 py-8">
+        <header class="flex justify-between items-center py-4">
+            <h1 class="text-lg font-semibold">Your Name</h1>
+            <nav class="space-x-4">
+                <a href="#" class="hover:underline">Blog</a>
+                <a href="#" class="hover:underline">Projects</a>
+                <a href="#" class="hover:underline">About</a>
+                <a href="#" class="hover:underline">Newsletter</a>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" class="sr-only peer">
+                    <div class="w-14 h-7 bg-gray-300 peer-focus:ring-4 peer-focus:ring-blue-300 
+                        dark:peer-focus:ring-gray-800 rounded-full peer 
+                        peer-checked:after:translate-x-7 peer-checked:after:border-white 
+                        peer-checked:bg-black dark:peer-checked:bg-gray-900 
+                        after:content-[''] after:absolute after:top-1 after:left-1 
+                        after:bg-white after:border-gray-300 after:border 
+                        after:rounded-full after:h-5 after:w-5 after:transition-all">
+                    </div>
+
+                </label>
+
+
+            </nav>
+        </header>
+
+        <hr class="border-gray-300 dark:border-gray-700 my-4">
+
+        <h2 class="text-9xl font-bold text-center">THE BLOG</h2>
+
+
+        <hr class="border-gray-300 dark:border-gray-700 my-4">
+
+        <h3 class="text-xl font-semibold mb-4">Recent blog posts</h3>
+
+        <div class="grid grid-cols-10 gap-6">
+            <div class="col-span-5 space-y-7">
+                <img src="img/hinhcanphong.jpg"
+                    class="w-[100%] h-[45%] rounded-lg transform hover:scale-110 transition duration-300 object-cover"
+                    alt="Office">
+                <div>
+                    <h1 class="text-blue-600 dark:text-blue-400 font-semibold leading-tight">Olivia Rhye • 1 Jan 2023
+                    </h1>
+                    <h3 class="text-lg font-bold leading-tight">UX review presentations</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg">
+                        How do you create compelling presentations that wow your colleagues and impress your managers?
+                    </p>
+                </div>
+                <div class="mt-2 space-x-2">
+                    <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded">Design</span>
+                    <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded">Research</span>
+                    <span class="px-2 py-1 bg-pink-100 text-pink-800 text-xs font-semibold rounded">Presentation</span>
+                </div>
+            </div>
+            <div class="col-span-5 space-y-4">
+                <div class="flex flex-col space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-4/12">
+                            <img src="img/hinhlamvien.jpg"
+                                class="w-full h-auto rounded-lg  transform hover:scale-110 transition duration-300"
+                                alt="Team">
+                        </div>
+                        <div class="w-6/12 pl-4">
+                            <p class="text-purple-600 dark:text-purple-400 font-semibold">Phoenix Baker • 1 Jan 2023</p>
+                            <h4 class="text-lg font-bold">Migrating to Linear 101</h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Linear helps streamline software projects, sprints, tasks, and bug tracking...
+                            </p>
+                            <div class="mt-2 space-x-2">
+                                <span
+                                    class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded">Design</span>
+                                <span
+                                    class="px-2 py-1 bg-pink-100 text-pink-800 text-xs font-semibold rounded">Research</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-4/12">
+                            <img src="img/phong2.jpg"
+                                class="w-full h-auto rounded-lg  transform hover:scale-110 transition duration-300"
+                                alt="Team">
+                        </div>
+                        <div class="w-6/12 pl-4">
+                            <p class="text-purple-600 dark:text-purple-400 font-semibold">Phoenix Baker • 1 Jan 2023</p>
+                            <h4 class="text-lg font-bold">Migrating to Linear 101</h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Linear helps streamline software projects, sprints, tasks, and bug tracking...
+                            </p>
+                            <div class="mt-2 space-x-2">
+                                <span
+                                    class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded">Design</span>
+                                <span
+                                    class="px-2 py-1 bg-pink-100 text-pink-800 text-xs font-semibold rounded">Research</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- kết thúc 3 ảnh đầu  -->
+        <div class="flex items-center gap-10">
+            <!-- Hình ảnh -->
+            <div class="flex-shrink-0 w-6/12">
+                <img src="img/hinhclimate.jpg"
+                    class="w-full h-auto max-h-60 rounded-lg  transform hover:scale-110 transition duration-300 object-cover"
+                    alt="Climate Impact">
+            </div>
+
+            <!-- Nội dung bên cạnh -->
+            <div class="w-6/12">
+                <h1 class="text-blue-600 dark:text-blue-400 font-semibold">Olivia Rhye • 1 Jan 2023</h1>
+                <h4 class="text-lg font-bold">Grid system for better Design User Interface</h4>
+                <p class="text-gray-600">
+                    A grid system is a design tool used to arrange content on a webpage. It is a series of
+                    vertical and horizontal lines that create a matrix of intersecting points, which can be used
+                    to align and organize page elements. Grid systems are used to create a consistent look and feel
+                    across a website, and can help
+                    to make the layout more visually appealing and easier to navigate.
+                </p>
+                <div class="mt-2 space-x-2">
+                    <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded">Design</span>
+                    <span class="px-2 py-1 bg-pink-100 text-pink-800 text-xs font-semibold rounded">Interface</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6">All blog posts</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="img/nui.pjg.jpg" class="w-full h-48 object-cover" alt="Post Image">
+                    <div class="p-4">
+                        <p class="text-purple-600 font-semibold">Alec Whitten • 1 Jan 2023</p>
+                        <h3 class="text-lg font-bold mt-1 flex items-center">
+                            Bill Walsh leadership lessons
+                            <a href="#" class="ml-2 text-gray-500 hover:text-black">↗</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                        </p>
+                        <div class="mt-3 space-x-2">
+                            <span
+                                class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded">Leadership</span>
+                            <span
+                                class="px-2 py-1 bg-gray-100 text-gray-800 text-xs font-semibold rounded">Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="img/thuyettirnh.jpg" class="w-full h-48 object-cover" alt="Post Image">
+                    <div class="p-4">
+                        <p class="text-blue-600 font-semibold">Demi Wilkinson • 1 Jan 2023</p>
+                        <h3 class="text-lg font-bold mt-1 flex items-center">
+                            PM mental models
+                            <a href="#" class="ml-2 text-gray-500 hover:text-black">↗</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Mental models are simple expressions of complex processes or relationships.
+                        </p>
+                        <div class="mt-3 space-x-2">
+                            <span
+                                class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded">Product</span>
+                            <span
+                                class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Research</span>
+                            <span
+                                class="px-2 py-1 bg-orange-100 text-orange-800 text-xs font-semibold rounded">Frameworks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="img/pc.jpg" class="w-full h-48 object-cover" alt="Post Image">
+                    <div class="p-4">
+                        <p class="text-purple-600 font-semibold">Candice Wu • 1 Jan 2023</p>
+                        <h3 class="text-lg font-bold mt-1 flex items-center">
+                            What is Wireframing?
+                            <a href="#" class="ml-2 text-gray-500 hover:text-black">↗</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Introduction to Wireframing and its Principles. Learn from the best in the industry.
+                        </p>
+                        <div class="mt-3 space-x-2">
+                            <span
+                                class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded">Design</span>
+                            <span
+                                class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded">Research</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="img/trangtri.jpg" class="w-full h-48 object-cover" alt="Post Image">
+                    <div class="p-4">
+                        <p class="text-purple-600 font-semibold">Alec Whitten • 1 Jan 2023</p>
+                        <h3 class="text-lg font-bold mt-1 flex items-center">
+                            Bill Walsh leadership lessons
+                            <a href="#" class="ml-2 text-gray-500 hover:text-black">↗</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                        </p>
+                        <div class="mt-3 space-x-2">
+                            <span
+                                class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded">Leadership</span>
+                            <span
+                                class="px-2 py-1 bg-gray-100 text-gray-800 text-xs font-semibold rounded">Management</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="img/hoc.jpg" class="w-full h-48 object-cover" alt="Post Image">
+                    <div class="p-4">
+                        <p class="text-purple-600 font-semibold"> Drew Cano • 1 Jan 2023</p>
+                        <h3 class="text-lg font-bold mt-1 flex items-center">
+                            Our top 10 Javascript frameworks to use
+                            <a href="#" class="ml-2 text-gray-500 hover:text-black">↗</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                        </p>
+                        <div class="mt-3 space-x-2">
+                            <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded">Software
+                                Development</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-800 text-xs font-semibold rounded">Tools</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-800 text-xs font-semibold rounded">SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="img/music.jp.jpg" class="w-full h-48 object-cover" alt="Post Image">
+                    <div class="p-4">
+                        <p class="text-purple-600 font-semibold">Orlando Diggs • 1 Jan 2023</p>
+                        <h3 class="text-lg font-bold mt-1 flex items-center">
+                            Bill Walsh leadership lessons
+                            <a href="#" class="ml-2 text-gray-500 hover:text-black">↗</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-1">
+                            Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                        </p>
+                        <div class="mt-3 space-x-2">
+                            <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded">
+                                Podcasts</span>
+                            <span class="px-2 py-1 bg-gray-100 text-gray-800 text-xs font-semibold rounded">Customer
+                                Success</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pagination-container">
+                <div class="pagination">
+                    <a href="#" class="pagination-arrow">← Previous</a>
+                    <a href="#" class="pagination-number active">1</a>
+                    <a href="#" class="pagination-number">2</a>
+                    <a href="#" class="pagination-number">3</a>
+                    <span class="pagination-dots">...</span>
+                    <a href="#" class="pagination-number">8</a>
+                    <a href="#" class="pagination-number">9</a>
+                    <a href="#" class="pagination-number">10</a>
+                    <a href="#" class="pagination-arrow">Next →</a>
+                </div>
+                <div class="copyright">
+                    © 2025 Twitter · LinkedIn · Email · RSS feed · Add to Feedly
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const toggle = document.getElementById('toggleDarkMode');
+        const html = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            html.classList.add('dark');
+            toggle.checked = true;
+        }
+
+        toggle.addEventListener('change', () => {
+            if (toggle.checked) {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+</body>
+
+</html>
